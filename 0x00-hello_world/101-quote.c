@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include<unistd.h>
+#include<string.h>
 
 /**
  * main - Entry point
@@ -8,6 +10,7 @@
 int main(void)
 {
 	char c[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+
 	write(2, c, strlen(c));
 	return (1);
 }
