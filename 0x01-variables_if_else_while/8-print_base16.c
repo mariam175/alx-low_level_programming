@@ -7,12 +7,15 @@
  */
 int main(void)
 {
-	int i;
-	char hex[15] = "0123456789abcdef";
+	char d, a;
 
-	for (i = 0; i < 15; i++)
+	for (d = '0'; d <= '9'; d++)
 	{
-		putchar(hex[i]);
+		putchar(d);
+	}
+	for (a = 'a'; a <= 'f'; a++)
+	{
+		putchar(a);
 	}
 	putchar('\n');
 	return (0);
