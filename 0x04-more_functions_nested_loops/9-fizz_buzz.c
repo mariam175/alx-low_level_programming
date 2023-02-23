@@ -14,7 +14,11 @@ int main(void)
 
 	for (i = 1; i <= 100; i++)
 	{
-		if (i % 3 == 0)
+		if (i == 100)
+		{
+			printf("%s", buzz);
+		}
+		else if (i % 3 == 0)
 		{
 			printf("%s ", fizz);
 		}
