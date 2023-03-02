@@ -12,11 +12,12 @@ char *cap_string(char *s)
 	int i, j;
 
 	for (i = 0; s[i] != '\0'; i++)
-	{6
+	{
 		for (j = 0; j < 13; j++)
 		{
 			if ((i == 0 || s[i - 1] == sepa[j]) && (s[i] >= 'a' && s[i] <= 'z'))
 				s[i] -= 32;
 		}
 	}
+	return (s);
 }
