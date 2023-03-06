@@ -15,12 +15,12 @@ char *_strstr(char *haystack, char *needle)
 
 		while (*fi == *sec && *sec != '\0')
 		{
-			*fi++;
-			*sec++;
+			fi++;
+			sec++;
 		}
 		if (*sec == '\0')
 			return (haystack);
-		*haystack++;
+		haystack++;
 	}
 	return (NULL);
 }
