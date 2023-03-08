@@ -10,7 +10,7 @@ int _sqrt_recursion(int n)
 {
 	if (n < 0)
 		return (-1);
-	return (sqrtt(n, (n + 1) / 2));
+	return (sqrtt(n, 1));
 }
 /**
  * sqrtt - Entry point
@@ -20,9 +20,9 @@ int _sqrt_recursion(int n)
  */
 int sqrtt(int n, int x)
 {
-	if (x * x < 1)
+	if (x * x > n)
 		return (-1);
 	if (x * x == n)
 		return (x);
-	return (sqrtt(n, x - 1));
+	return (sqrtt(n, x + 1));
 }
