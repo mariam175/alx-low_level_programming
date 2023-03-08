@@ -8,10 +8,9 @@ int palindrome(char *s, int l, int r);
  */
 int is_palindrome(char *s)
 {
-	int i, len = 0;
+	int i, len;
 
-	for (i = 0; s[i] != '\0'; i++)
-		len++;
+	len = _strlen_recursion(s);
 	if (len == 0)
 		return (1);
 	return (palindrome(s, 0, len - 1));
