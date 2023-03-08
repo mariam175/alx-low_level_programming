@@ -32,4 +32,5 @@ int palindrome(char *s, int l, int r)
 		return (0);
 	if (l < r)
 		return (palindrome(s, l + 1, r - 1));
+	return (1);
 }
