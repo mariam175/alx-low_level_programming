@@ -8,7 +8,7 @@ int palindrome(char *s, int l, int r);
  */
 int is_palindrome(char *s)
 {
-	int i, len;
+	int len;
 
 	len = _strlen_recursion(s);
 	if (len == 0)
