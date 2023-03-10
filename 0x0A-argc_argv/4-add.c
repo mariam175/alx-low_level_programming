@@ -21,11 +21,11 @@ int main(int argc, char *argv[])
 		{
 			int j = 0;
 
-			for (; j < strlen(argv[i]); i++)
+			for (; j < strlen(argv[i]); j++)
 			{
 				if (!isdigit(argv[i][j]))
 				{
-					printf("Error\n");
+					printf("%s\n", "Error");
 					return (1);
 				}
 			}
