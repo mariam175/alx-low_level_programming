@@ -1,6 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 #include "main.h"
+/**
+ * is_string - Entry point
+ *@s:string
+ * Return: is string or not
+ */
+
+int is_string(char *s)
+{
+	int i;
+
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		if (!isdigit(s[i]))
+			return (0);
+	}
+	return (1);
+}
+
 /**
  * main - Entry point
  *@argc:number of arguments
@@ -15,7 +34,7 @@ int main(int argc, char *argv[])
 		return (0);
 	for (i = 1; i < argc; i++)
 	{
-		if (!atoi(argv[i]))
+		if (!is_string(argv[i]))
 		{
 			printf("%s\n", "Error");
 			return (1);
