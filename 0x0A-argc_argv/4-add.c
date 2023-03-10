@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <string.h>
 #include "main.h"
 /**
  * main - Entry point
@@ -18,13 +19,17 @@ int main(int argc, char *argv[])
 
 		for (i = 1; i < argc; i++)
 		{
-			if (isdigit(argv[i]))
-				res += atoi(argv[i]);
-			else
+			int j = 0;
+
+			for (; j < strlen(argv[i]); i++)
 			{
-				printf("%s\n", "Error");
-				return (1);
+				if (!isdigit(argv[i][j]))
+				{
+					printf("Error\n");
+					return (1);
+				}
 			}
+			res += atoi(argv[i]);
 		}
 		printf("%d\n", res);
 	}
