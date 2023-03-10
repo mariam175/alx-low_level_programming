@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
 /**
  * main - Entry point
@@ -19,7 +20,10 @@ int main(int argc, char *argv[])
 			if (isdigit(argv[i]))
 				res += atoi(argv[i]);
 			else
+			{
 				printf("%s\n", "Error");
+				return (1);
+			}
 		}
 		printf("%d\n", res);
 	}
