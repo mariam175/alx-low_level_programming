@@ -9,11 +9,10 @@
  */
 int main(int argc, char *argv[])
 {
-	if (argc < 1)
-		return (0);
-
 	int i, res = 0;
 
+	if (argc < 1)
+		return (0);
 	for (i = 1; i < argc; i++)
 	{
 		if (!atoi(argv[i]))
