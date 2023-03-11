@@ -14,25 +14,20 @@ int main(int argc, char *argv[])
 
 	if (argc == 2)
 	{
-		if (strchr(argv[argc - 1], '-'))
-		{
-			printf("0\n");
-			return (1);
-		}
 		m = atoi(argv[argc - 1]);
 
 		while (m > 0)
 		{
-			if (m % 25 == 0)
+			if (m >= 25)
 			{
 				m -= 25;
-			} else if (m % 10 == 0)
+			} else if (m >= 10)
 			{
 				m -= 10;
-			} else if (m % 5 == 0)
+			} else if (m >= 5)
 			{
 				m -= 5;
-			} else if (m % 2 == 0)
+			} else if (m >= 2)
 			{
 				m -= 2;
 			} else
