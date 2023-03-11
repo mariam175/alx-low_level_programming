@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 	}
 	m = atoi(argv[1]);
 
-	while (m)
+	while (m > 0)
 	{
 		if (m % 25 == 0)
 			m -= 25;
