@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "main.h"
 /**
  * main - Entry point
@@ -16,7 +17,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	if (atoi(argv[1]) < 0)
+	if (strchr(argv[argc - 1], '-'))
 	{
 		printf("0\n");
 		return (1);
