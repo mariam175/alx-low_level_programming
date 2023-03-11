@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (1);
 	}
-	m = atoi(argv[1]);
+	m = atoi(argv[argc - 1]);
 
 	while (m > 0)
 	{
