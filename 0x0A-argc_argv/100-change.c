@@ -9,7 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int coin;
+	int coin = 0, m;
 
 	if (argc < 2)
 	{
@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
-	int m = argv[1];
+	m = atoi(argv[1]);
 
 	while (m)
 	{
