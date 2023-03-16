@@ -21,4 +21,5 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	for (i = 0; i < nmemb; i++)
 		arr[i] = 0;
+	return (arr);
 }
