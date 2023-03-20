@@ -31,10 +31,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 	ow = malloc(sizeof(char) * (leno + 1));
 	if (ow == NULL)
 		return (NULL);
-	for (i = 0; i < lena; i++)
+	for (i = 0; i <= lena; i++)
 		nm[i] = name[i];
 	nm[i] = '\0';
-	for (i = 0; i < leno; i++)
+	for (i = 0; i <= leno; i++)
 		ow[i] = owner[i];
 	ow[i] = '\0';
 	nedog->name = nm;
