@@ -1,5 +1,10 @@
 #ifndef _STRUCT_
 #define _STRUCT_
+/*
+ * dog_t - typedef
+ */
+typedef struct dog dog_t;
+
 /**
   * struct dog - dog attributes
   * @name: name
