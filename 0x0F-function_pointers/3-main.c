@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 #include "3-calc.h"
 /**
  * main - Entry point
@@ -10,6 +11,7 @@
 int main(int argc, char *argv[])
 {
 	int (*op)(int, int);
+	int res;
 
 	if (argc != 4)
 	{
@@ -23,8 +25,6 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(99);
 	}
-	int res;
-
 	res = op(atoi(argv[1]), atoi(argv[3]));
 	printf("%d\n", res);
 	return (0);
