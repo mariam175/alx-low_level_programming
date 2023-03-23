@@ -11,7 +11,7 @@ void print_all(const char * const format, ...)
 {
 	va_list ptr;
 	unsigned int i, f = 0, j;
-	char *form = "cifs";
+	char *form = "cifs", *s;
 
 	va_start(ptr, format);
 	i = 0;
@@ -33,15 +33,15 @@ void print_all(const char * const format, ...)
 				printf("%d", va_arg(ptr, int)), f = 1;
 				break;
 			case 'f':
-				printf("%f", va_arg(ptr, float)), f = 1;
+				printf("%f", va_arg(ptr, double)), f = 1;
 				break;
 			case 's':
-				char *s = va_arg(ptr, char *);
+				s = va_arg(ptr, char *);
 
 				if (s == NULL)
 					printf("(nil)");
 				else
-					prinf("%s", s);
+					printf("%s", s);
 				f = 1;
 				break;
 		}
