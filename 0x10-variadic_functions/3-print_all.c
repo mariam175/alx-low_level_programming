@@ -37,15 +37,15 @@ void print_all(const char * const format, ...)
 				break;
 			case 's':
 				s = va_arg(ptr, char *);
-
-				if (s == NULL)
-					printf("(nil)");
-				else
-					printf("%s", s);
 				f = 1;
+				if (s == NULL)
+				{
+					printf("(nil)");
+					break;
+				}
+				printf("%s", s);
 				break;
-		}
-		i++;
+		} i++;
 	}
 	printf("\n");
 	va_end(ptr);
