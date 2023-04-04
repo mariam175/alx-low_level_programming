@@ -10,9 +10,9 @@
 int pop_listint(listint_t **head)
 {
 	listint_t *curr, *ptr;
-	int data = 0;
+	int data;
 
-	if (head == NULL)
+	if (*head == NULL)
 		return (0);
 
 	curr = *head;
