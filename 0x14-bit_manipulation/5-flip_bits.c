@@ -17,5 +17,5 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 		c += xr & 1;
 		xr >>= 1;
 	}
-	return (xr);
+	return (c);
 }
